@@ -1,0 +1,12 @@
+<html>
+  <head><title>Frontend</title></head>
+  <body>
+    <h1>Welcome to the Frontend</h1>
+    <p>Calls backend via /api</p>
+    <script>
+      fetch('/api').then(res => res.text()).then(data => {
+        document.write('<pre>' + data + '</pre>');
+      });
+    </script>
+  </body>
+</html>
